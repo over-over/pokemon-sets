@@ -8,8 +8,8 @@ const App = () => {
         <main className="container">
             <h1 className="app-header">PokemonTCQ Sets Browser</h1>
             <Switch>
-                <Route path={process.env.PUBLIC_URL + "/"} component={HomePage} exact/>
-                <Route path={process.env.PUBLIC_URL + "/set/:id"} component={CardsPage}/>
+                <Route path="/" component={HomePage} exact/>
+                <Route path="/set/:id" component={CardsPage}/>
             </Switch>
         </main>
     )
