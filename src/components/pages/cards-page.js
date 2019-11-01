@@ -8,6 +8,7 @@ import { compose } from '../../utils';
 import ErrorIndicator from '../error-indicator';
 import Spinner from '../spinner';
 import './cards-page.css';
+import { Link } from 'react-router-dom';
 
 const CardItem = (item) => {
     const { id, imageUrl, name} = item;
@@ -38,6 +39,9 @@ class CardsPage extends Component {
 
         return (
             <div className="container">
+                <button className="btn-primary">
+                    <Link to="/" >Go Home</Link>
+                </button>
                 <ul className="card-list">
                     {
                         cards.map(CardItem)

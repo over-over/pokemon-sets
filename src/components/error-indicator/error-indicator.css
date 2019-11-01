@@ -11,6 +11,8 @@
 .error-text {
     display: inline-block;
     vertical-align: middle;
+    font-family: inherit;
     font-size: 2.5rem;
+    font-weight: 400;
     color: #F44336;
 }

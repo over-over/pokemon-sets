@@ -27,6 +27,12 @@ const updateSetList = (state, action) => {
                 loading: false,
                 error: action.payload,
             }
+        case 'SORT_SETS':
+            return {
+                sets: action.payload,
+                loading: false,
+                error: null,
+            }
         default:
             return state.setList;
     }

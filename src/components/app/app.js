@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import { HomePage, CardsPage } from '../pages';
 import './app.css';
 
@@ -9,7 +9,8 @@ const App = () => {
             <h1 className="app-header">PokemonTCQ Sets Browser</h1>
             <Switch>
                 <Route path="/" component={HomePage} exact/>
-                <Route path="/set/:id" component={CardsPage}/>
+                <Route path="/set" component={() => <Redirect to="/set/base1"/>} exact/>
+                <Route path="/set/:id?" component={CardsPage}/>
             </Switch>
         </main>
     )

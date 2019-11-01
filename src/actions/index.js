@@ -52,7 +52,16 @@ const fetchSets = (pokemonService) => () => (dispatch) => {
         .catch((error) => dispatch(setsError(error)));
 }
 
+const sortSets = () => (set, sortFunc) => (dispatch) => {
+    const sortedSet = set.sort(sortFunc);
+    dispatch({
+        type: 'SORT_SETS',
+        payload: sortedSet
+    });
+}
+
 export {
     fetchCards,
-    fetchSets
+    fetchSets,
+    sortSets
 }
