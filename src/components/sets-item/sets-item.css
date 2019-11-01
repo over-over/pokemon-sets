@@ -61,3 +61,13 @@
 .set-list-item+.set-list-item {
     margin-top: 5px;
 }
+@media (max-width: 1024px) {
+    .set{
+        width: 50%;
+    }
+}
+@media (max-width: 550px) {
+    .set{
+        width: 100%;
+    }
+}
