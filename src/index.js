@@ -15,7 +15,7 @@ ReactDOM.render(
     <Provider store={store}>
         <ErrorBoundry>
             <PokemonServiceProvider value={pokemonService}>
-                <Router basename={process.env.PUBLIC_URL + '/pokemon-sets'}>
+                <Router basename='/pokemon-sets'>
                     <App />
                 </Router>
             </PokemonServiceProvider>
