@@ -1,0 +1,16 @@
+.error-wrapper {
+    display: block;
+    height: 300px;
+    text-align: center;
+}
+.error-icon{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 40px;
+}
+.error-text {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 2.5rem;
+    color: #F44336;
+}

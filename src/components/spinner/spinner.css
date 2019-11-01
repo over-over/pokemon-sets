@@ -1,0 +1,53 @@
+.spinner-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}
+.spinner{
+    display: inline-block;
+    position: relative;
+}
+@keyframes dot-pop {
+  from {
+    transform: scale(0);
+    opacity: 1;
+  }
+  to {
+    transform: scale(12);
+    opacity: 0;
+  }
+}
+.spinner-dot-1 {
+    display: block;
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    background-color: red;
+    left: 0;
+    right: 0;
+    top: 0px;
+    bottom: 2px;
+    margin: auto;
+    border-radius: 50%;
+    animation: dot-pop 2s linear infinite;
+}
+.spinner-dot-2 {
+    display: block;
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    background-color: red;
+    left: 0;
+    right: 0;
+    top: 0px;
+    bottom: 2px;
+    margin: auto;
+    border-radius: 50%;
+    animation: dot-pop 2s 1s linear infinite;
+}
+.spinner svg{
+    height: 100px;
+    width: 100px;
+    fill: rgb(32, 22, 21);
+}

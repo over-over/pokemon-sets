@@ -1,0 +1,61 @@
+.set {
+    display: inline-flex;
+    width: 33.33%;
+    padding: 16px;
+    color: #4a4a4a;
+    font-size: 1rem;
+}
+.set-link{
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+.set-wrapper {
+    height: 100%;
+    padding: 16px;
+    box-shadow: 0 2px 3px rgba(10,10,10,0.1), 0 0 0 1px rgba(10,10,10,0.1);
+    transition: box-shadow 0.3s;
+}
+.set-link:hover .set-wrapper{
+    box-shadow: 0 12px 2px 0px rgba(33, 150, 243, 0.15), 0 0 0 3px rgba(33, 150, 243, 0.4);
+
+}
+.set-logo-wrapper {
+    height: 140px;
+    padding-top: 16px;
+    display: flex;
+    justify-content: center
+}
+.set-logo {
+    max-height: 100%;
+    max-width: 100%;
+    align-self: center;
+}
+.set-info {
+    padding: 24px;
+}
+.set-figure {
+    display: flex;
+    flex-direction: row;
+}
+.set-symbol {
+    display: inline-block;
+    width: 48px;
+    height: 100%;
+    margin-right: 16px;
+}
+.set-name {
+    font-size: 1.5rem;
+}
+.set-list{
+    list-style-type: disc;
+    margin-left: 32px;
+    margin-top: 16px;
+}
+.set-list-item{
+    line-height: 1.5;
+}
+.set-list-item+.set-list-item {
+    margin-top: 5px;
+}
